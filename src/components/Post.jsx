@@ -5,17 +5,17 @@ export function Post() {
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img 
+                    <img
                         className={styles.avatar}
-                        src="https://github.com/gabrielcastellani.png" 
+                        src="https://github.com/gabrielcastellani.png"
                     />
                     <div className={styles.authorInfo}>
                         <strong>Gabriel Castellani de Oliveira</strong>
                         <span>Web Developer</span>
                     </div>
                 </div>
-                <time 
-                    title="11 de Maio às 08:13h" 
+                <time
+                    title="11 de Maio às 08:13h"
                     dateTime="2022-05-11 08:13:00">
                     Publicado há 1h
                 </time>
@@ -31,6 +31,16 @@ export function Post() {
                     <a href="#">#rocketseat</a>
                 </p>
             </div>
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
+                <textarea
+                    placeholder="Deixe um comentário"
+                />
+                <footer>
+                    <button type="submit">Publicar</button>
+                </footer>
+            </form>
         </article>
     );
 }
